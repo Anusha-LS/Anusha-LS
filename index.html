@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha L S - Portfolio</title>
+   <!--<link rel="stylesheet" href="styles.css">--> 
+    <!--<script defer src="script.js"></script>--> 
+    <style>
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fully Black Background */
+    color: white;
+    overflow: auto;
+    position: relative;
+}
+
+/* Starry Background Effect */
+.stars {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(white, rgba(255, 255, 255, 0.3) 10%, transparent 20%),
+                radial-gradient(white, rgba(255, 255, 255, 0.2) 10%, transparent 15%),
+                radial-gradient(white, rgba(255, 255, 255, 0.1) 5%, transparent 10%);
+    background-size: 5px 5px, 10px 10px, 3px 3px;
+    background-position: 10% 20%, 30% 50%, 60% 80%;
+    animation: twinkle 5s infinite alternate ease-in-out;
+}
+
+/* Twinkling Effect */
+@keyframes twinkle {
+    0% { opacity: 0.7; }
+    100% { opacity: 0.4; }
+}
+
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #4a90e2, #7b68ee);
+    color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+    background: #252542;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7b68ee;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #2c2c3b;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    color: #7b68ee;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #3c3c5b;
+}
+
+/* Links */
+a {
+    color: #7b68ee;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #252542;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation ease-in-out 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 15px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="fade-in">Anusha L S</h1>
+        <h2 class="fade-in">Flutter Developer Intern</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+
+        </ul>
+    </nav>
+
+<section id="contact" class="fade-in">
+        <h3>Contact</h3>
+        <p>📞 +91-7899865098</p>
+        <p>✉ <a href="mailto:ls5anusha@gmail.com">ls5anusha@gmail.com</a></p>
+        <p>📍 Shivamogga, India</p>
+        <p>🔗 <a href="https://linkedin.com/in/anusha-ls" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <section id="profile" class="fade-in">
+        <h3>Profile Summary</h3>
+        <p>
+            Aspiring <strong>Flutter Developer</strong> with hands-on experience in mobile application development and UI/UX design.  
+            Proficient in using Flutter, Firebase, and Android Studio to build and deploy robust applications.  
+        </p>
+        <p>
+            Passionate about problem-solving and continuously learning emerging technologies to develop efficient  
+            and scalable software solutions. Dedicated to delivering high-quality applications with seamless  
+            user experiences and optimized performance.  
+        </p>
+    </section>
+    
+    
+    <section id="education" class="fade-in">
+        <h3>Education</h3>
+        <ul>
+            <li><strong>Sir M Visvesvaraya Institute of Technology</strong> (2020 - 2024) - CGPA: 8.13</li>
+            <li><strong>Sri Aurobindo Pre-University College</strong> (2018 - 2020) - 64.16%</li>
+            <li><strong>Sri B G S English Medium High School</strong> (2017 - 2018) - 83.36%</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h3>Skills</h3>
+        <ul>
+            <li>💻 C, Python, Java, C++</li>
+            <li>📱 Flutter, Android Studio, Firebase</li>
+            <li>🎨 UI/UX Design, Problem-Solving, Communication</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h3>Projects</h3>
+        <ul><li><strong>📡 LiveCast - RTSP Video Player (Flutter)</strong>  
+            <br>🔗 <a href="https://github.com/Anusha-LS/live_cast" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </li>
+            <li><strong>💙 Heart Disease Prediction using ML</strong></li>
+            <li><strong>🎬 Netflix Clone (Flutter & Firebase)</strong>
+            <br>🔗 <a href="https://github.com/Anusha-LS/netflix_clone.git" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </li>
+            <li><strong>🚗 Parking Management System</strong></li>
+            <li><strong>⚡ Electricity Bill Generator</strong></li>
+        </ul>
+    </section>
+
+    <section id="certificate" class="fade-in">
+        <h3>Certificate</h3>
+        <ul>
+            <li><strong>Alpha (DSA with Java) - Apna College</strong></li>
+            <p>📜 Successfully completed Data Structures & Algorithms (DSA) with Java.</p>
+       
+            <li><strong>Python Course - Udemy</strong></li>
+            <p>📜 Completed a Python development course on Udemy.</p>
+        </ul>
+    </section>
+    
+    <footer class="fade-in">
+        <p>© 2025 Anusha L S | All Rights Reserved</p>
+    </footer>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll(".fade-in");
+
+    function reveal() {
+        fadeInElements.forEach((element) => {
+            const position = element.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+            if (position < screenHeight - 100 && !element.classList.contains("visible")) {
+                element.classList.add("visible");
+                element.style.animation = "fadeInAnimation ease-in-out 1s forwards";
+            }
+        });
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal(); // Ensure elements appear on initial load
+});
+
+
+</script>
+</body>
+</html>
