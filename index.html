@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anusha | Flutter Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      position: relative;
+    }
+    header {
+      padding: 2rem;
+      border-bottom: 2px solid #f1c40f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .intro-text h1 {
+      font-size: 3rem;
+      color: #f1c40f;
+      animation: float 3s ease-in-out infinite;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #f1c40f;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+      animation: float 4s ease-in-out infinite;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #f1c40f; }
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+    h2 { color: #f1c40f; margin-bottom: 1rem; }
+    .project-card {
+      background: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid #f1c40f;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255, 255, 0, 0.1);
+      text-decoration: none;
+      color: white;
+      display: block;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(241, 196, 15, 0.3);
+    }
+    .project-icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+    .fade-in {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    .decor-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.05;
+      z-index: 0;
+      animation: pulse 6s ease-in-out infinite;
+    }
+    .decor1 {
+      width: 250px;
+      height: 250px;
+      background: #f1c40f;
+      top: 20%;
+      left: -100px;
+    }
+    .decor2 {
+      width: 300px;
+      height: 300px;
+      background: white;
+      top: 70%;
+      right: -150px;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 2px solid #f1c40f;
+    }
+  </style>
+</head>
+<body>
+  <div class="decor-shape decor1"></div>
+  <div class="decor-shape decor2"></div>
+
+  <header>
+    <div class="intro-text">
+      <h1>Anusha L S</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <img src="assets/images/my_pic.jpg" alt="Anusha" class="profile-pic" />
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Anusha, a passionate Flutter developer with experience building elegant and functional mobile and web applications. I specialize in crafting seamless user experiences using Flutter and Firebase.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <a href="https://github.com/Anusha-LS/netflix_clone" target="_blank" class="project-card">
+      <strong><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="Netflix" class="project-icon">Netflix Clone ➜</strong><br />
+      A beautiful Netflix UI clone built using Flutter with responsive layout, animations, and real movie data integration using TMDB API.
+    </a>
+    <a href="https://github.com/Anusha-LS/yolo" target="_blank" class="project-card">
+      <strong>Yolo Debit Card UI ➜</strong><br />
+      A Flutter-based clone of a Figma debit card design for UI/UX demonstration.
+    </a>
+    <a href="https://github.com/Anusha-LS/galaxy-ai-chat" target="_blank" class="project-card">
+      <strong>Galaxy.ai Chatbot ➜</strong><br />
+      Full-stack AI chatbot using Flutter, Node.js, OpenAI API, and MongoDB with real-time chat interface.
+    </a>
+  </section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <p><strong>Alpha (DSA with Java)</strong><br />Apna College</p>
+      <a href="certificates/certificate-alpha-plus-batch-660d6bc9e46e69d24705fed7.pdf" target="_blank">
+        <img src="certificates/alpha_dsa_java_thumbnail.jpg" alt="Certificate 1"
+             style="width: 100%; max-width: 300px; border: 2px solid #f1c40f; border-radius: 8px;" />
+      </a>
+    </div>
+
+    <div style="text-align: center;">
+      <p><strong>Python Demonstrations For Practice Course</strong><br />Udemy</p>
+      <a href="certificates/Udemy.pdf" target="_blank">
+        <img src="certificates/pyhton.jpg" alt="Certificate 2"
+             style="width: 100%; max-width: 300px; border: 2px solid #f1c40f; border-radius: 8px;" />
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ls5anusha@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Anusha-LS" target="_blank">github.com/Anusha-LS</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/anusha-ls/" target="_blank">linkedin.com/in/anushals</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anusha | Flutter Developer</p>
+  </footer>
+
+  <script>
+    // Simple scroll-triggered animation for project cards
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
